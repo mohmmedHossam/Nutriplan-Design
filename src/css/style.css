@@ -1,0 +1,334 @@
+.loading {
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  width: 50%;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.modal-header img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-header p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Section */
+.modal-section {
+  margin-bottom: 24px;
+}
+
+.modal-section label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+/* Servings */
+.servings-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.servings-control button {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.servings-control input {
+  width: 80px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+/* Nutrition */
+.nutrition-box {
+  background: #ecfdf5;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.nutrition-title {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  text-align: center;
+}
+
+.nutrition-grid p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nutrition-grid span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Colors */
+.calories {
+  color: #059669;
+}
+.protein {
+  color: #2563eb;
+}
+.carbs {
+  color: #d97706;
+}
+.fat {
+  color: #7c3aed;
+}
+
+/* Actions */
+.modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.modal-actions button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* Header */
+.product-header {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.product-image {
+  width: 130px;
+  height: 130px;
+  background: #f3f4f6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-info h2 {
+  margin: 4px 0;
+}
+
+.brand {
+  color: #059669;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.weight {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.badges {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.badge {
+  display: flex;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.badge-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.yellow {
+  background: #facc15;
+}
+.red {
+  background: #dc2626;
+}
+
+.close-product-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+  padding: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Nutrition */
+.nutrition-box {
+  background: #ecfdf5;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.calories {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cal-value {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.bar {
+  background: #e5e7eb;
+  height: 6px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #22c55e;
+  border-radius: 999px;
+}
+
+.blue {
+  color: #2563eb;
+}
+.purple {
+  color: #7c3aed;
+}
+.orange {
+  color: #f97316;
+}
+
+.extra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 16px;
+  border-top: 1px solid #d1fae5;
+  padding-top: 12px;
+  text-align: center;
+}
+
+/* Info */
+.info-box,
+.allergens {
+  background: #f9fafb;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.allergens {
+  background: #fee2e2;
+}
+
+/* Actions */
+.modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.primary-btn {
+  flex: 1;
+  padding: 14px;
+  background: #059669;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.secondary-btn {
+  flex: 1;
+  padding: 14px;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 12px;
+}
