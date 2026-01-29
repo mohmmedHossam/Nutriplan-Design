@@ -106,7 +106,7 @@ function setActiveNav(key) {
 
 var mealsGridView = document.getElementById("grid-view-btn");
 var mealsListView = document.getElementById("list-view-btn");
-
+var maelSearchInput = document.getElementById("search-input");
 var mealsGrid = true;
 
 mealsGridView.addEventListener("click", function () {
@@ -201,6 +201,9 @@ var meals;
 async function displayContent() {
   try {
     showLoading();
+    document
+      .getElementById("search-input")
+      .addEventListener("input", searchByMeal);
     var areas = await MealsRepository.getAreas();
     displayAreas(areas);
     var categories = await MealsRepository.getCategories();
@@ -362,6 +365,11 @@ function displayMeals(data, category = "") {
   }
 
   document.getElementById("recipes-grid").innerHTML = mealsContent;
+}
+
+async function searchByMeal() {
+  var meals = await MealsRepository.search(maelSearchInput.value);
+  displayMeals(meals);
 }
 
 document.getElementById("back-to-meals-btn").addEventListener("click", () => {

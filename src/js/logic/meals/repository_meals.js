@@ -52,6 +52,16 @@ export class MealsRepository extends BaseApiService {
     }
   }
 
+  static async search(q) {
+    var searchResult = await super.get(routes.mealsSearch, {
+      q: q,
+    });
+    if (searchResult != null) {
+      var searchResultResponse = MealsResponse.fromJson(searchResult).results;
+      return searchResultResponse;
+    }
+  }
+
   static async getNutritionAnalyze(name, ingredients) {
     var nutritionAnalyzeResponse = await super.post(routes.nutritionAnalyze, {
       name: name,
