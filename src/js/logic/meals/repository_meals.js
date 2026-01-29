@@ -1,5 +1,5 @@
-import { BaseApiService } from "/src/js/apis/baseApiServices.js";
-import { routes } from "/src/js/apis/apiRoutes.js";
+import { BaseApiService } from "../apis/baseApiServices.js";
+import { routes } from "../apis/apiRoutes.js";
 import { CategoriesResponse } from "./Models/meals_categories_model.js";
 import { AreasResponse } from "./Models/meals_areas_model.js";
 import { MealsResponse } from "./Models/meals_model.js";
