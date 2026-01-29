@@ -1,5 +1,5 @@
-import { BaseApiService } from "../apis/baseApiServices.js";
-import { routes } from "../apis/apiRoutes.js";
+import { BaseApiService } from "/src/js/apis/baseApiServices.js";
+import { routes } from "/src/js/apis/apiRoutes.js";
 import { BarcodeResponse } from "./Models/products_barcode_response.js";
 import { ProductsSearchResponse } from "./Models/products_search_response.model.js";
 import { ProductCategoriesResponse } from "./Models/product_categories_response.js";
